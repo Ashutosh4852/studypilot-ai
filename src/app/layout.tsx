@@ -3,6 +3,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ToastProvider } from "@/components/ui/Toast";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://studypilot.ai"),
@@ -127,6 +128,7 @@ export default function RootLayout({
           <div className="flex-1 flex flex-col">{children}</div>
           <Footer />
         </ToastProvider>
+        <Analytics />
       </body>
     </html>
   );
