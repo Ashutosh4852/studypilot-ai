@@ -3,9 +3,9 @@ import { Metadata } from "next";
 import { UnifiedWorkspace } from "@/components/workspace/UnifiedWorkspace";
 
 export const metadata: Metadata = {
-  title: "StudyPilot AI — Integrated PDF Studio & AI Image Studio",
+  title: "Free Online PDF Editor without Watermark & AI Image Studio | StudyPilot AI",
   description:
-    "Unified browser-first AI workspace for students and researchers. Edit PDFs, annotate, extract text, summarize with AI, and retouch images.",
+    "100% Free online PDF editor, free background remover HD, AI PDF summarizer, MCQ quiz generator, PDF to JPG converter, and merge PDF. No watermark, no signup.",
 };
 
 export default function HomePage() {

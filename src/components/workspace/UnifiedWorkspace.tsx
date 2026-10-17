@@ -82,7 +82,7 @@ export function UnifiedWorkspace({ initialTab = "dashboard" }: UnifiedWorkspaceP
             <FileText className="w-3.5 h-3.5" />
             <span>PDF Studio</span>
             <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300 font-bold">
-              Pro
+              100% Free
             </span>
           </button>
 
@@ -138,91 +138,275 @@ export function UnifiedWorkspace({ initialTab = "dashboard" }: UnifiedWorkspaceP
       <div className="flex-1 flex flex-col">
         {/* 1. DASHBOARD OVERVIEW */}
         <div className={activeTab === "dashboard" ? "block" : "hidden"}>
-          {/* Quick Hub Navigation Cards */}
-          <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-6">
-            <div className="p-6 rounded-3xl bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-white shadow-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-              <div className="space-y-1">
-                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-white/20">
-                  All-In-One Unified Workspace
-                </span>
-                <h2 className="text-xl sm:text-2xl font-extrabold">
-                  StudyPilot AI Integrated Studio
-                </h2>
-                <p className="text-xs text-indigo-100 max-w-xl">
-                  Edit PDFs, retouch & upscale graphics, generate revision flashcards, and bridge media across studios seamlessly in one unified interface.
+          <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-8">
+            {/* Free Hero Banner */}
+            <div className="relative overflow-hidden p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-indigo-700 via-violet-700 to-purple-700 text-white shadow-2xl flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 border border-white/10">
+              <div className="space-y-3 z-10 max-w-2xl">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-[11px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-400 text-slate-950 shadow-sm flex items-center gap-1.5">
+                    <Sparkles className="w-3.5 h-3.5" /> 100% Free Forever
+                  </span>
+                  <span className="text-[11px] font-bold px-3 py-1 rounded-full bg-white/20 backdrop-blur-md">
+                    Zero Watermark • No Credit Card
+                  </span>
+                  <span className="text-[11px] font-bold px-3 py-1 rounded-full bg-white/20 backdrop-blur-md">
+                    No Sign Up Required
+                  </span>
+                </div>
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight leading-tight">
+                  Free Online PDF Editor & AI Image Studio
+                </h1>
+                <p className="text-xs sm:text-sm text-indigo-100 leading-relaxed">
+                  The complete browser-first creative & study platform. Edit PDF documents, add digital signatures, remove image backgrounds in HD, convert files, and generate AI revision notes & MCQs without paywalls or usage limits.
                 </p>
               </div>
 
-              <div className="flex items-center gap-2.5">
+              <div className="flex flex-col sm:flex-row lg:flex-col gap-2.5 w-full sm:w-auto z-10 min-w-[200px]">
                 <button
                   onClick={() => setActiveTab("pdf-studio")}
-                  className="px-4 py-2 rounded-xl bg-white text-indigo-700 font-bold text-xs shadow-md hover:bg-indigo-50 transition-all"
+                  className="px-5 py-2.5 rounded-xl bg-white text-indigo-700 font-bold text-xs shadow-lg hover:bg-indigo-50 transition-all text-center flex items-center justify-center gap-2"
                 >
-                  Open PDF Studio
+                  <FileText className="w-4 h-4" /> Open Free PDF Studio
                 </button>
                 <button
                   onClick={() => setActiveTab("image-studio")}
-                  className="px-4 py-2 rounded-xl bg-slate-900 text-white font-bold text-xs shadow-md hover:bg-slate-800 transition-all"
+                  className="px-5 py-2.5 rounded-xl bg-slate-950 text-white font-bold text-xs shadow-lg hover:bg-slate-900 border border-white/20 transition-all text-center flex items-center justify-center gap-2"
                 >
-                  Open Image Studio
+                  <ImageIcon className="w-4 h-4 text-pink-400" /> Open Free Image Studio
                 </button>
               </div>
             </div>
 
-            {/* Quick studio jump grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-              <div
-                onClick={() => setActiveTab("pdf-studio")}
-                className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-xl hover:border-indigo-400 cursor-pointer transition-all group"
-              >
-                <div className="w-10 h-10 rounded-xl bg-indigo-100 dark:bg-indigo-950/80 text-indigo-600 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                  <FileText className="w-5 h-5" />
+            {/* Core Feature Cards (High SEO Value) */}
+            <div className="space-y-3">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h2 className="text-lg font-bold text-slate-900 dark:text-white">
+                    Free Online Productivity Suite
+                  </h2>
+                  <p className="text-xs text-slate-500">
+                    High-performance client-side tools designed for students, researchers, and creators.
+                  </p>
                 </div>
-                <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-indigo-600 transition-colors">
-                  PDF Studio
-                </h3>
-                <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                  Full editor with text boxes, annotations, signatures, watermarks, reordering, merge, and WASM OCR.
-                </p>
-                <span className="mt-4 text-xs font-semibold text-indigo-600 flex items-center gap-1">
-                  Launch Editor →
+                <span className="text-xs font-semibold px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300">
+                  Unlimited Free Access
                 </span>
               </div>
 
-              <div
-                onClick={() => setActiveTab("image-studio")}
-                className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-xl hover:border-pink-400 cursor-pointer transition-all group"
-              >
-                <div className="w-10 h-10 rounded-xl bg-pink-100 dark:bg-pink-950/80 text-pink-600 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                  <ImageIcon className="w-5 h-5" />
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                {/* PDF Studio Card */}
+                <div
+                  onClick={() => setActiveTab("pdf-studio")}
+                  className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-xl hover:border-indigo-400 cursor-pointer transition-all group flex flex-col justify-between"
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-3">
+                      <div className="w-10 h-10 rounded-xl bg-indigo-100 dark:bg-indigo-950/80 text-indigo-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <FileText className="w-5 h-5" />
+                      </div>
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400">
+                        No Watermark
+                      </span>
+                    </div>
+                    <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-indigo-600 transition-colors">
+                      Free Online PDF Editor
+                    </h3>
+                    <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+                      Add and edit text, draw freehand, insert shapes, draw or type signatures, apply official stamps, rotate/reorder pages, merge, split, and extract text with OCR.
+                    </p>
+                  </div>
+                  <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-semibold text-indigo-600">
+                    <span>Launch PDF Editor</span>
+                    <span>→</span>
+                  </div>
                 </div>
-                <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-pink-600 transition-colors">
-                  AI Image Studio
+
+                {/* AI Image Studio Card */}
+                <div
+                  onClick={() => setActiveTab("image-studio")}
+                  className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-xl hover:border-pink-400 cursor-pointer transition-all group flex flex-col justify-between"
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-3">
+                      <div className="w-10 h-10 rounded-xl bg-pink-100 dark:bg-pink-950/80 text-pink-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <ImageIcon className="w-5 h-5" />
+                      </div>
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-pink-50 dark:bg-pink-950 text-pink-600 dark:text-pink-400">
+                        Instant Cutout
+                      </span>
+                    </div>
+                    <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-pink-600 transition-colors">
+                      Free AI Image Editor & Background Remover
+                    </h3>
+                    <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+                      1-click transparent background cutout, YouTube & Instagram canvas presets, convolution sharpening, filters, privacy blur redaction, and PNG/JPG export.
+                    </p>
+                  </div>
+                  <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-semibold text-pink-600">
+                    <span>Launch Image Studio</span>
+                    <span>→</span>
+                  </div>
+                </div>
+
+                {/* Study Tools Card */}
+                <div
+                  onClick={() => setActiveTab("study-tools")}
+                  className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-xl hover:border-amber-400 cursor-pointer transition-all group flex flex-col justify-between"
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-3">
+                      <div className="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-950/80 text-amber-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <BookOpen className="w-5 h-5" />
+                      </div>
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-950 text-amber-600 dark:text-amber-400">
+                        Smart AI
+                      </span>
+                    </div>
+                    <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-600 transition-colors">
+                      AI Notes & Revision Flashcards
+                    </h3>
+                    <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+                      Generate structured revision notes, interactive 3D flip flashcards, and exam-readiness MCQ quizzes directly from any topic or document content.
+                    </p>
+                  </div>
+                  <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-semibold text-amber-600">
+                    <span>Launch Study Deck</span>
+                    <span>→</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Popular Free Search Tools Grid (SEO Keyword Anchors) */}
+            <div className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm space-y-4">
+              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-200">
+                Popular Free Online Tools
+              </h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5 text-xs">
+                <button
+                  onClick={() => setActiveTab("pdf-studio")}
+                  className="p-2.5 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 hover:text-indigo-600 text-left transition-all"
+                >
+                  <span className="font-semibold block">Free PDF Editor</span>
+                  <span className="text-[10px] text-slate-400">Add text, sign & draw</span>
+                </button>
+                <button
+                  onClick={() => setActiveTab("pdf-studio")}
+                  className="p-2.5 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 hover:text-indigo-600 text-left transition-all"
+                >
+                  <span className="font-semibold block">Merge PDF Free</span>
+                  <span className="text-[10px] text-slate-400">Combine multiple files</span>
+                </button>
+                <button
+                  onClick={() => setActiveTab("pdf-studio")}
+                  className="p-2.5 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 hover:text-indigo-600 text-left transition-all"
+                >
+                  <span className="font-semibold block">PDF to JPG / PNG</span>
+                  <span className="text-[10px] text-slate-400">Extract high-res images</span>
+                </button>
+                <button
+                  onClick={() => setActiveTab("image-studio")}
+                  className="p-2.5 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 hover:bg-pink-50 dark:hover:bg-pink-950/40 hover:text-pink-600 text-left transition-all"
+                >
+                  <span className="font-semibold block">Background Remover HD</span>
+                  <span className="text-[10px] text-slate-400">100% transparent cutout</span>
+                </button>
+                <button
+                  onClick={() => setActiveTab("image-studio")}
+                  className="p-2.5 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 hover:bg-pink-50 dark:hover:bg-pink-950/40 hover:text-pink-600 text-left transition-all"
+                >
+                  <span className="font-semibold block">YouTube Thumbnail Maker</span>
+                  <span className="text-[10px] text-slate-400">1280 × 720 canvas preset</span>
+                </button>
+                <button
+                  onClick={() => setActiveTab("pdf-studio")}
+                  className="p-2.5 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 hover:text-indigo-600 text-left transition-all"
+                >
+                  <span className="font-semibold block">Free Sign PDF</span>
+                  <span className="text-[10px] text-slate-400">Draw, cursive, or stamp</span>
+                </button>
+                <button
+                  onClick={() => setActiveTab("pdf-studio")}
+                  className="p-2.5 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 hover:text-indigo-600 text-left transition-all"
+                >
+                  <span className="font-semibold block">AI PDF Summarizer</span>
+                  <span className="text-[10px] text-slate-400">Bullet points & concepts</span>
+                </button>
+                <button
+                  onClick={() => setActiveTab("study-tools")}
+                  className="p-2.5 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 hover:bg-amber-50 dark:hover:bg-amber-950/40 hover:text-amber-600 text-left transition-all"
+                >
+                  <span className="font-semibold block">MCQ Quiz Generator</span>
+                  <span className="text-[10px] text-slate-400">Instant test questions</span>
+                </button>
+              </div>
+            </div>
+
+            {/* SEO Rich FAQ Accordion Section */}
+            <div className="p-6 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm space-y-5">
+              <div>
+                <h3 className="text-base font-bold text-slate-900 dark:text-white">
+                  Frequently Asked Questions (FAQ)
                 </h3>
-                <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                  Canvas presets for YouTube and Instagram, background cutout/replace, filters, convolution sharpness, and privacy blur.
+                <p className="text-xs text-slate-500">
+                  Everything you need to know about StudyPilot AI&apos;s free PDF and Image tools.
                 </p>
-                <span className="mt-4 text-xs font-semibold text-pink-600 flex items-center gap-1">
-                  Launch Creative Canvas →
-                </span>
               </div>
 
-              <div
-                onClick={() => setActiveTab("study-tools")}
-                className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-xl hover:border-amber-400 cursor-pointer transition-all group"
-              >
-                <div className="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-950/80 text-amber-600 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                  <BookOpen className="w-5 h-5" />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/60 dark:border-slate-800 space-y-1.5">
+                  <h4 className="font-bold text-slate-800 dark:text-slate-100">
+                    Is StudyPilot AI really 100% free with no watermark?
+                  </h4>
+                  <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Yes! All tools—including PDF editing, page reordering, digital signatures, image background removal, and AI study notes—are 100% free forever. We never add watermarks to your downloaded files or demand credit card details.
+                  </p>
                 </div>
-                <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-amber-600 transition-colors">
-                  Notes & Flashcards
-                </h3>
-                <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                  AI study notes generator, interactive revision flashcard deck with flip animation, and exam quiz arena.
-                </p>
-                <span className="mt-4 text-xs font-semibold text-amber-600 flex items-center gap-1">
-                  Launch Revision Deck →
-                </span>
+
+                <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/60 dark:border-slate-800 space-y-1.5">
+                  <h4 className="font-bold text-slate-800 dark:text-slate-100">
+                    How do I edit PDF text and sign documents online for free?
+                  </h4>
+                  <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Simply open PDF Studio, drag and drop your PDF file, and choose between Text Box, Freehand Drawing, Shapes, or Signature tool. You can draw your signature, type it in cursive, or upload a signature image, then click Download PDF.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/60 dark:border-slate-800 space-y-1.5">
+                  <h4 className="font-bold text-slate-800 dark:text-slate-100">
+                    How does the free background remover work?
+                  </h4>
+                  <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Our AI Image Studio uses high-speed color difference and edge detection algorithms to cut out backgrounds directly in your browser. You can export as a transparent PNG or replace the background with custom colors.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/60 dark:border-slate-800 space-y-1.5">
+                  <h4 className="font-bold text-slate-800 dark:text-slate-100">
+                    Are my uploaded files and PDFs kept private?
+                  </h4>
+                  <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Your privacy is our highest priority. All PDF edits, page renders, annotations, and image canvas transformations are processed 100% locally on your device via WebAssembly and HTML5 Canvas. Your documents are never stored on external servers without your permission.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/60 dark:border-slate-800 space-y-1.5">
+                  <h4 className="font-bold text-slate-800 dark:text-slate-100">
+                    Can I merge multiple PDFs or convert PDF to JPG?
+                  </h4>
+                  <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Yes! Click on &apos;Convert / OCR / Merge&apos; in PDF Studio to merge multiple PDFs into one, split selected page ranges, convert PDF pages to high-resolution JPG or PNG images, and extract plain text.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/60 dark:border-slate-800 space-y-1.5">
+                  <h4 className="font-bold text-slate-800 dark:text-slate-100">
+                    How do I generate revision flashcards and MCQs from my notes?
+                  </h4>
+                  <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Head to the &apos;Notes &amp; Flashcards&apos; tab or click &apos;AI PDF Assistant&apos;. Enter any study subject or document text to instantly generate structured bullet-point notes, 3D flip study flashcards, and a 5-question MCQ revision quiz with live scoring.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

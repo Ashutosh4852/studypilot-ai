@@ -26,8 +26,8 @@ export function Navbar() {
 
   const navLinks = [
     { href: "/", label: "Dashboard", icon: BookOpen },
-    { href: "/pdf-studio", label: "PDF Studio", icon: FileText, badge: "New" },
-    { href: "/image-studio", label: "AI Image Studio", icon: ImageIcon, badge: "AI Powered" },
+    { href: "/pdf-studio", label: "PDF Studio", icon: FileText, badge: "100% Free" },
+    { href: "/image-studio", label: "AI Image Studio", icon: ImageIcon, badge: "Free AI" },
   ];
 
   const toolsList = [
@@ -173,10 +173,10 @@ export function Navbar() {
               </div>
               <div className="hidden xl:flex flex-col text-left">
                 <span className="text-xs font-semibold text-slate-800 dark:text-slate-200 leading-tight">
-                  Student Account
+                  Free Student Plan
                 </span>
-                <span className="text-[10px] text-emerald-600 dark:text-emerald-400 flex items-center gap-1 font-medium">
-                  <CheckCircle2 className="w-2.5 h-2.5" /> Client Active
+                <span className="text-[10px] text-emerald-600 dark:text-emerald-400 flex items-center gap-1 font-bold">
+                  <CheckCircle2 className="w-2.5 h-2.5" /> 100% Free Forever
                 </span>
               </div>
             </div>
