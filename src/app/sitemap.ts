@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://studypilot.ai";
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://studypilot-app-seven.vercel.app";
 
   return [
     {
@@ -14,13 +14,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/pdf-studio`,
       lastModified: new Date(),
       changeFrequency: "daily",
-      priority: 0.9,
+      priority: 0.95,
     },
     {
       url: `${baseUrl}/image-studio`,
       lastModified: new Date(),
       changeFrequency: "daily",
-      priority: 0.9,
+      priority: 0.95,
     },
   ];
 }
