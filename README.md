@@ -136,3 +136,56 @@ npm test
 - **OCR Engine**: Tesseract.js (Apache-2.0 WebAssembly)
 - **Archive Engine**: JSZip
 - **AI Integrations**: Google Gemini 1.5 Flash API + Local Heuristic Engine
+
+---
+
+## 📦 GitHub Repository Setup & Push
+
+The local repository is initialized with a clean root commit on the `main` branch. To push to your GitHub account:
+
+1. Create a new repository on [GitHub](https://github.com/new) named `studypilot-ai`.
+2. Connect your local repository and push:
+   ```bash
+   git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/studypilot-ai.git
+   git branch -M main
+   git push -u origin main
+   ```
+> **Security Note**: `.gitignore` is pre-configured to ensure `.env.local` and your API keys are **never** pushed to GitHub.
+
+---
+
+## ⚡ 1-Click Vercel Deployment
+
+StudyPilot AI is fully optimized for free hosting on Vercel:
+
+1. Visit [Vercel New Project](https://vercel.com/new).
+2. Import your GitHub repository `studypilot-ai`.
+3. Under **Environment Variables**, add:
+   - `GEMINI_API_KEY`: *(Your Google AI Studio key)*
+4. Click **Deploy**.
+5. Your app will be live on `https://studypilot-ai.vercel.app` with global CDN caching and automatic HTTPS.
+
+---
+
+## 🤖 Google AI Studio Free Quota Connection
+
+1. Go to [Google AI Studio](https://aistudio.google.com/app/apikey).
+2. Click **Create API Key**.
+3. Copy the key and add it to your `.env.local`:
+   ```env
+   GEMINI_API_KEY=AIzaSy...
+   ```
+4. Restart your development server (`bun dev`).
+5. In StudyPilot AI, all PDF summaries, Q&A, MCQs, and copy assistance will now run on Google's free Gemini 1.5 Flash tier.
+
+---
+
+## 💰 Future Monetization Roadmap
+
+1. **Freemium Pro Tier ($9/month or ₹499/month)**:
+   - Free: Unlimited client-side PDF editing, basic image retouching, 5 daily Gemini summaries.
+   - Pro: Unlimited Gemini 1.5 Flash/Pro document analyses, 100+ page bulk OCR, 4K AI image upscaling, cloud synchronization.
+2. **Student & Coaching Campus Licensing**:
+   - Institutional subscriptions for competitive exam coaching institutes (GATE, JEE, UPSC, NEET).
+3. **Pay-as-you-go Microcredits**:
+   - Affordable credit packs for bulk PDF conversions and high-definition generative AI models.
