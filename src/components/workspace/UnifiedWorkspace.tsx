@@ -16,6 +16,7 @@ import { PdfEditor } from "@/components/pdf/PdfEditor";
 import { ImageEditor } from "@/components/image/ImageEditor";
 import { StudyToolsHub } from "@/components/study/StudyToolsHub";
 import { useToast } from "@/components/ui/Toast";
+import { ShareBar } from "@/components/common/ShareBar";
 
 export type WorkspaceTab = "dashboard" | "pdf-studio" | "image-studio" | "study-tools" | "pipeline";
 
@@ -176,6 +177,9 @@ export function UnifiedWorkspace({ initialTab = "dashboard" }: UnifiedWorkspaceP
                 </button>
               </div>
             </div>
+
+            {/* Viral Multi-Platform Share Widget */}
+            <ShareBar url="https://studypilot-app-seven.vercel.app" />
 
             {/* Core Feature Cards (High SEO Value) */}
             <div className="space-y-3">
