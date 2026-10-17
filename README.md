@@ -1,6 +1,11 @@
-# StudyPilot AI — PDF Studio & AI Image Studio
+# StudyPilot AI — 100% Free Online PDF Editor & AI Image Studio
 
-StudyPilot AI is an advanced, browser-first educational and creative productivity platform tailored for students, researchers, educators, and creators.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FAshutosh4852%2Fstudypilot-ai&project-name=studypilot-ai&env=GEMINI_API_KEY&envDescription=Google%20AI%20Studio%20API%20Key%20(optional)&envLink=https%3A%2F%2Faistudio.google.com%2Fapp%2Fapikey)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Ashutosh4852%2Fstudypilot--ai-blue?logo=github)](https://github.com/Ashutosh4852/studypilot-ai)
+[![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg)](LICENSE)
+[![Status: 100% Free Forever](https://img.shields.io/badge/Access-100%25%20Free%20Forever-indigo.svg)](#)
+
+StudyPilot AI is a modern, browser-first educational and creative productivity platform tailored for students, researchers, educators, and creators. **100% Free forever with zero watermarks, zero subscription fees, and no sign-up barriers.**
 
 ---
 
