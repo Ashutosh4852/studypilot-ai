@@ -11,7 +11,7 @@ interface ShareBarProps {
 
 export function ShareBar({
   url = "https://studypilot-app-seven.vercel.app",
-  title = "StudyPilot AI — 100% Free Online PDF Editor & AI Image Studio (Zero Watermark)",
+  title = "DocuMorphix AI — 100% Free Online PDF Editor & AI Image Studio (Zero Watermark)",
 }: ShareBarProps) {
   const { toast } = useToast();
   const [copied, setCopied] = useState(false);
@@ -48,7 +48,7 @@ export function ShareBar({
         </div>
         <div>
           <h4 className="text-sm font-bold text-slate-800 dark:text-slate-100 flex items-center justify-center md:justify-start gap-1.5">
-            Share StudyPilot AI with Friends & Classmates
+            Share DocuMorphix AI with Friends & Classmates
             <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300 font-extrabold flex items-center gap-1">
               <Sparkles className="w-3 h-3" /> 100% Free
             </span>

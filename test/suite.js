@@ -1,5 +1,5 @@
 /**
- * Comprehensive Automated Verification Test Suite for StudyPilot AI
+ * Comprehensive Automated Verification Test Suite for DocuMorphix AI
  * Tests PDF Engine, Conversions, Annotations, Image Algorithms, and AI Heuristics
  */
 
@@ -31,7 +31,7 @@ async function runTests() {
   await test("PDF Creation and Header Verification", async () => {
     const doc = await PDFDocument.create();
     const page = doc.addPage([595.28, 841.89]);
-    page.drawText("StudyPilot AI Test Document", { x: 50, y: 800, size: 18 });
+    page.drawText("DocuMorphix AI Test Document", { x: 50, y: 800, size: 18 });
     const pdfBytes = await doc.save();
 
     // Verify PDF header %PDF-
@@ -127,7 +127,7 @@ async function runTests() {
     const font = await doc.embedFont("Helvetica");
 
     // Header
-    page.drawText("StudyPilot AI Semester Notes", { x: 40, y: 770, size: 9, font });
+    page.drawText("DocuMorphix AI Semester Notes", { x: 40, y: 770, size: 9, font });
     // Footer
     page.drawText("Page 1 of 1", { x: 260, y: 25, size: 9, font });
 

@@ -353,14 +353,14 @@ export function UnifiedWorkspace({ initialTab = "dashboard" }: UnifiedWorkspaceP
                   Frequently Asked Questions (FAQ)
                 </h3>
                 <p className="text-xs text-slate-500">
-                  Everything you need to know about StudyPilot AI&apos;s free PDF and Image tools.
+                  Everything you need to know about DocuMorphix AI&apos;s free PDF and Image tools.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
                 <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/60 dark:border-slate-800 space-y-1.5">
                   <h4 className="font-bold text-slate-800 dark:text-slate-100">
-                    Is StudyPilot AI really 100% free with no watermark?
+                    Is DocuMorphix AI really 100% free with no watermark?
                   </h4>
                   <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
                     Yes! All tools—including PDF editing, page reordering, digital signatures, image background removal, and AI study notes—are 100% free forever. We never add watermarks to your downloaded files or demand credit card details.
@@ -446,7 +446,7 @@ export function UnifiedWorkspace({ initialTab = "dashboard" }: UnifiedWorkspaceP
               <span>Cross-Studio Pipeline Bridge</span>
             </h3>
             <p className="text-xs text-slate-500 leading-relaxed">
-              StudyPilot AI uniquely bridges PDF and Creative image workflows into a seamless bidirectional pipeline:
+              DocuMorphix AI uniquely bridges PDF and Creative image workflows into a seamless bidirectional pipeline:
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">

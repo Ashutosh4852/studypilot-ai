@@ -1,11 +1,11 @@
-# StudyPilot AI — 100% Free Online PDF Editor & AI Image Studio
+# DocuMorphix AI — 100% Free Online PDF Editor & AI Image Studio
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FAshutosh4852%2Fstudypilot-ai&project-name=studypilot-ai&env=GEMINI_API_KEY&envDescription=Google%20AI%20Studio%20API%20Key%20(optional)&envLink=https%3A%2F%2Faistudio.google.com%2Fapp%2Fapikey)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Ashutosh4852%2Fstudypilot--ai-blue?logo=github)](https://github.com/Ashutosh4852/studypilot-ai)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg)](LICENSE)
 [![Status: 100% Free Forever](https://img.shields.io/badge/Access-100%25%20Free%20Forever-indigo.svg)](#)
 
-StudyPilot AI is a modern, browser-first educational and creative productivity platform tailored for students, researchers, educators, and creators. **100% Free forever with zero watermarks, zero subscription fees, and no sign-up barriers.**
+DocuMorphix AI is a modern, browser-first educational and creative productivity platform tailored for students, researchers, educators, and creators. **100% Free forever with zero watermarks, zero subscription fees, and no sign-up barriers.**
 
 ---
 
@@ -109,11 +109,11 @@ Configure optional server-side API keys:
 # Optional: Google Gemini API Key for AI PDF Summarization and Q&A
 GEMINI_API_KEY=your_gemini_api_key_here
 
-NEXT_PUBLIC_APP_NAME="StudyPilot AI"
+NEXT_PUBLIC_APP_NAME="DocuMorphix AI"
 NEXT_PUBLIC_APP_URL="http://localhost:3000"
 ```
 
-> **Note**: If `GEMINI_API_KEY` is not provided, StudyPilot AI automatically operates using its built-in local heuristic engine, clearly indicated in the UI.
+> **Note**: If `GEMINI_API_KEY` is not provided, DocuMorphix AI automatically operates using its built-in local heuristic engine, clearly indicated in the UI.
 
 ### Running the App
 ```bash
@@ -122,7 +122,7 @@ bun dev
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view StudyPilot AI.
+Open [http://localhost:3000](http://localhost:3000) to view DocuMorphix AI.
 
 ### Running Automated Tests
 ```bash
@@ -161,7 +161,7 @@ The local repository is initialized with a clean root commit on the `main` branc
 
 ## ⚡ 1-Click Vercel Deployment
 
-StudyPilot AI is fully optimized for free hosting on Vercel:
+DocuMorphix AI is fully optimized for free hosting on Vercel:
 
 1. Visit [Vercel New Project](https://vercel.com/new).
 2. Import your GitHub repository `studypilot-ai`.
@@ -181,7 +181,7 @@ StudyPilot AI is fully optimized for free hosting on Vercel:
    GEMINI_API_KEY=AIzaSy...
    ```
 4. Restart your development server (`bun dev`).
-5. In StudyPilot AI, all PDF summaries, Q&A, MCQs, and copy assistance will now run on Google's free Gemini 1.5 Flash tier.
+5. In DocuMorphix AI, all PDF summaries, Q&A, MCQs, and copy assistance will now run on Google's free Gemini 1.5 Flash tier.
 
 ---
 

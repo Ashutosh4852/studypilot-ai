@@ -1,5 +1,5 @@
 /**
- * Server-side AI client for StudyPilot AI
+ * Server-side AI client for DocuMorphix AI
  * Uses Google Gemini API when configured, with robust offline heuristic fallbacks
  * and honest disclosure flags.
  */
@@ -37,7 +37,7 @@ export async function processAiPdfTask(req: AiTaskRequest): Promise<AiTaskRespon
     } catch (err: any) {
       console.warn("Gemini API call failed, falling back to local heuristic engine:", err.message);
       const fallback = runLocalHeuristicTask(req);
-      fallback.message = `Gemini API error (${err.message}). Processed via StudyPilot offline engine.`;
+      fallback.message = `Gemini API error (${err.message}). Processed via DocuMorphix offline engine.`;
       return fallback;
     }
   }
@@ -55,7 +55,7 @@ async function callGeminiApi(req: AiTaskRequest, apiKey: string): Promise<AiTask
   let prompt = "";
   switch (req.task) {
     case "summarize":
-      prompt = `You are StudyPilot AI, an elite educational study companion. Provide a comprehensive, structured summary of the following document text. Include:
+      prompt = `You are DocuMorphix AI, an elite educational study companion. Provide a comprehensive, structured summary of the following document text. Include:
 1. Executive Overview
 2. Core Takeaways (bullet points)
 3. Key Concepts Explained
@@ -66,7 +66,7 @@ ${req.text.slice(0, 24000)}`;
       break;
 
     case "qa":
-      prompt = `You are StudyPilot AI. Answer the user's question accurately based STRICTLY on the document context provided below. If the answer cannot be found in the document, state so clearly.
+      prompt = `You are DocuMorphix AI. Answer the user's question accurately based STRICTLY on the document context provided below. If the answer cannot be found in the document, state so clearly.
 
 Question: ${req.query}
 
@@ -207,7 +207,7 @@ function runLocalHeuristicTask(req: AiTaskRequest): AiTaskResponse {
       return {
         result: `### 📌 Executive Summary (${wordCount} words analyzed)\n\n${topSentences}\n\n### 💡 Key Takeaways\n- Focus on core principles highlighted above.\n- Review technical formulas and structural definitions.\n- Re-read introductory and concluding sections before exams.`,
         provider: "local-heuristic-engine",
-        modelUsed: "StudyPilot Heuristic v1.0",
+        modelUsed: "DocuMorphix Heuristic v1.0",
         isExternalApi: false,
         message: "Generated via local browser engine. To connect Gemini 1.5 Flash cloud AI, configure GEMINI_API_KEY.",
       };
@@ -231,14 +231,14 @@ function runLocalHeuristicTask(req: AiTaskRequest): AiTaskResponse {
             .map((s) => `> "${s.trim()}"`)
             .join("\n\n")}`,
           provider: "local-heuristic-engine",
-          modelUsed: "StudyPilot Heuristic v1.0",
+          modelUsed: "DocuMorphix Heuristic v1.0",
           isExternalApi: false,
         };
       } else {
         return {
           result: `Could not find an exact sentence matching "${req.query}" in the uploaded document. Try searching for specific keywords or check if the document contains scanned non-OCR text.`,
           provider: "local-heuristic-engine",
-          modelUsed: "StudyPilot Heuristic v1.0",
+          modelUsed: "DocuMorphix Heuristic v1.0",
           isExternalApi: false,
         };
       }
@@ -272,7 +272,7 @@ function runLocalHeuristicTask(req: AiTaskRequest): AiTaskResponse {
         result: `Extracted ${defs.length} definitions from document.`,
         definitions: defs,
         provider: "local-heuristic-engine",
-        modelUsed: "StudyPilot Heuristic v1.0",
+        modelUsed: "DocuMorphix Heuristic v1.0",
         isExternalApi: false,
       };
     }
@@ -302,7 +302,7 @@ function runLocalHeuristicTask(req: AiTaskRequest): AiTaskResponse {
         result: `Generated ${generatedMcqs.length} revision questions.`,
         mcqs: generatedMcqs,
         provider: "local-heuristic-engine",
-        modelUsed: "StudyPilot Heuristic v1.0",
+        modelUsed: "DocuMorphix Heuristic v1.0",
         isExternalApi: false,
       };
     }
@@ -311,7 +311,7 @@ function runLocalHeuristicTask(req: AiTaskRequest): AiTaskResponse {
       return {
         result: `### 💡 Simplified Explanation (Feynman Technique)\n\n**In plain English:**\nThink of this concept like a daily routine or a water filtration system. The main goal described in the text is to transform complex inputs into reliable outputs with minimal friction.\n\n**Core Breakdown:**\n1. **The 'Why':** The text establishes why this rule or concept exists.\n2. **The Mechanism:** Step-by-step actions that drive the process.\n3. **Practical Takeaway:** Apply this by focusing on primary inputs first before optimizing edge cases.\n\n*Original passage analyzed:* "${text.slice(0, 160)}..."`,
         provider: "local-heuristic-engine",
-        modelUsed: "StudyPilot Heuristic v1.0",
+        modelUsed: "DocuMorphix Heuristic v1.0",
         isExternalApi: false,
       };
     }
@@ -320,7 +320,7 @@ function runLocalHeuristicTask(req: AiTaskRequest): AiTaskResponse {
       return {
         result: `[Translation to ${req.targetLang || "Spanish"} via Local Engine]\n\nNote: For high-accuracy multi-language neural translation, connect your free GEMINI_API_KEY in .env.local.\n\nHeuristic preview:\n${text.slice(0, 400)}`,
         provider: "local-heuristic-engine",
-        modelUsed: "StudyPilot Heuristic v1.0",
+        modelUsed: "DocuMorphix Heuristic v1.0",
         isExternalApi: false,
       };
     }
@@ -329,7 +329,7 @@ function runLocalHeuristicTask(req: AiTaskRequest): AiTaskResponse {
       return {
         result: text.slice(0, 500),
         provider: "local-heuristic-engine",
-        modelUsed: "StudyPilot Heuristic v1.0",
+        modelUsed: "DocuMorphix Heuristic v1.0",
         isExternalApi: false,
       };
   }

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { UnifiedWorkspace } from "@/components/workspace/UnifiedWorkspace";
 
 export const metadata: Metadata = {
-  title: "Free Online PDF Editor without Watermark & AI Image Studio | StudyPilot AI",
+  title: "Free Online PDF Editor without Watermark & AI Image Studio | DocuMorphix AI",
   description:
     "100% Free online PDF editor, free background remover HD, AI PDF summarizer, MCQ quiz generator, PDF to JPG converter, and merge PDF. No watermark, no signup.",
 };

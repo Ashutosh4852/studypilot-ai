@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { UnifiedWorkspace } from "@/components/workspace/UnifiedWorkspace";
 
 export const metadata: Metadata = {
-  title: "Generate MCQs from PDF Free Online — AI Exam Practice Quiz | StudyPilot AI",
+  title: "Generate MCQs from PDF Free Online — AI Exam Practice Quiz | DocuMorphix AI",
   description:
     "Generate multiple choice questions (MCQs) and interactive study quizzes from any PDF or topic online for free. Test your knowledge with instant scoring.",
   keywords: [

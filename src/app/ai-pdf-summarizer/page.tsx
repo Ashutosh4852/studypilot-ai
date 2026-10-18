@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { UnifiedWorkspace } from "@/components/workspace/UnifiedWorkspace";
 
 export const metadata: Metadata = {
-  title: "AI PDF Summarizer & Notes Generator Free Online | StudyPilot AI",
+  title: "AI PDF Summarizer & Notes Generator Free Online | DocuMorphix AI",
   description:
     "Summarize PDF documents, research papers, and lecture notes with AI for free. Extract key concepts, definitions, and study takeaways in seconds without limits.",
   keywords: [

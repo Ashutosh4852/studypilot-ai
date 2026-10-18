@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { UnifiedWorkspace } from "@/components/workspace/UnifiedWorkspace";
 
 export const metadata: Metadata = {
-  title: "Split PDF Online Free — Extract Pages Without Limits | StudyPilot AI",
+  title: "Split PDF Online Free — Extract Pages Without Limits | DocuMorphix AI",
   description:
     "Split PDF files or extract custom page ranges into new standalone documents for free with zero watermarks. Fast, browser-based, and completely private.",
   keywords: [

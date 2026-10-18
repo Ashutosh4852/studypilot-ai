@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { UnifiedWorkspace } from "@/components/workspace/UnifiedWorkspace";
 
 export const metadata: Metadata = {
-  title: "Merge PDF Free Online — Combine Multiple PDF Files Without Watermark | StudyPilot AI",
+  title: "Merge PDF Free Online — Combine Multiple PDF Files Without Watermark | DocuMorphix AI",
   description:
     "Combine multiple PDF documents into one single file 100% free with zero watermarks. Fast, secure, and private in-browser PDF merger with unlimited pages.",
   keywords: [

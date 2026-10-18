@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { UnifiedWorkspace } from "@/components/workspace/UnifiedWorkspace";
 
 export const metadata: Metadata = {
-  title: "Free AI Background Remover HD — 100% Transparent Cutout | StudyPilot AI",
+  title: "Free AI Background Remover HD — 100% Transparent Cutout | DocuMorphix AI",
   description:
     "Remove background from photos and images in HD resolution 100% free with no watermark. Instant transparent PNG download with zero signup required.",
   keywords: [

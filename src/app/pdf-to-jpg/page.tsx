@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { UnifiedWorkspace } from "@/components/workspace/UnifiedWorkspace";
 
 export const metadata: Metadata = {
-  title: "Convert PDF to JPG Free Online — High Quality Image Extractor | StudyPilot AI",
+  title: "Convert PDF to JPG Free Online — High Quality Image Extractor | DocuMorphix AI",
   description:
     "Convert PDF pages to high-resolution JPG or PNG images online for free. Download individual pages or a complete ZIP package with zero watermarks or signup.",
   keywords: [

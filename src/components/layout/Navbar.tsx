@@ -61,7 +61,7 @@ export function Navbar() {
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-lg leading-tight bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 dark:from-indigo-400 dark:via-violet-400 dark:to-purple-300 bg-clip-text text-transparent">
-                  StudyPilot <span className="font-extrabold text-indigo-600 dark:text-indigo-400">AI</span>
+                  DocuMorphix <span className="font-extrabold text-indigo-600 dark:text-indigo-400">AI</span>
                 </span>
                 <span className="text-[10px] text-slate-500 dark:text-slate-400 font-medium">
                   PDF & Creative Studio

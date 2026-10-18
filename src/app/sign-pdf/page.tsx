@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { UnifiedWorkspace } from "@/components/workspace/UnifiedWorkspace";
 
 export const metadata: Metadata = {
-  title: "Sign PDF Online Free — Add Digital Signature & Initials (No Watermark) | StudyPilot AI",
+  title: "Sign PDF Online Free — Add Digital Signature & Initials (No Watermark) | DocuMorphix AI",
   description:
     "Sign PDF documents online for free. Draw your signature by hand, type cursive initials, or upload image seals with zero watermarks or signup barriers.",
   keywords: [

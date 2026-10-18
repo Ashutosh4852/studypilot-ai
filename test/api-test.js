@@ -1,5 +1,5 @@
 /**
- * Live End-to-End API Integration Verification for StudyPilot AI
+ * Live End-to-End API Integration Verification for DocuMorphix AI
  * Tests all live endpoints on localhost:3000
  */
 
@@ -31,7 +31,7 @@ async function runLiveTests() {
     const res = await fetch(`${BASE_URL}/`);
     if (res.status !== 200) throw new Error(`HTTP ${res.status}`);
     const html = await res.text();
-    if (!html.includes("StudyPilot")) throw new Error("Missing branding in HTML");
+    if (!html.includes("DocuMorphix")) throw new Error("Missing branding in HTML");
   });
 
   // TEST 2: PDF Studio Route

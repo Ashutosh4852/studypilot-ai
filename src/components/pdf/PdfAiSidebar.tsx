@@ -51,7 +51,7 @@ export function PdfAiSidebar({
   // Q&A state
   const [qaInput, setQaInput] = useState("");
   const [chatMessages, setChatMessages] = useState<Array<{ sender: "user" | "ai"; text: string }>>([
-    { sender: "ai", text: "Hello! I am your StudyPilot AI assistant. Ask me anything about this PDF document." },
+    { sender: "ai", text: "Hello! I am your DocuMorphix AI assistant. Ask me anything about this PDF document." },
   ]);
 
   // Translate state
@@ -112,7 +112,7 @@ export function PdfAiSidebar({
       toast({
         type: "success",
         title: "Analysis Ready",
-        description: json.data.isExternalApi ? "Processed with Gemini 1.5 Flash" : "Generated via StudyPilot Local Engine",
+        description: json.data.isExternalApi ? "Processed with Gemini 1.5 Flash" : "Generated via DocuMorphix Local Engine",
       });
     } catch (e: any) {
       toast({ type: "error", title: "AI Error", description: e.message });
@@ -271,7 +271,7 @@ export function PdfAiSidebar({
       <div className="px-3 py-1.5 bg-slate-100 dark:bg-slate-800/60 border-b border-slate-200 dark:border-slate-800 text-[10px] flex items-center justify-between text-slate-500 dark:text-slate-400">
         <span className="flex items-center gap-1">
           <ShieldCheck className="w-3 h-3 text-emerald-500" />
-          {aiProviderInfo?.isExternal ? "Gemini 1.5 Flash Cloud" : "StudyPilot Offline Engine"}
+          {aiProviderInfo?.isExternal ? "Gemini 1.5 Flash Cloud" : "DocuMorphix Offline Engine"}
         </span>
         <span>Page {currentPage}/{totalPages}</span>
       </div>

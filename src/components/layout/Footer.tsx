@@ -12,7 +12,7 @@ export function Footer() {
               <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white text-xs font-bold">
                 SP
               </div>
-              <span className="font-bold text-slate-800 dark:text-slate-100">StudyPilot AI</span>
+              <span className="font-bold text-slate-800 dark:text-slate-100">DocuMorphix AI</span>
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
               Unified browser-first AI workspace for students, educators, and creators. Edit PDFs, manipulate images, and study smarter.
@@ -59,7 +59,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-slate-200 dark:border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 dark:text-slate-400 gap-4">
-          <p>© {new Date().getFullYear()} StudyPilot AI. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} DocuMorphix AI. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1">
               <Shield className="w-3.5 h-3.5 text-indigo-500" /> Private & Secure

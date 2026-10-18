@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { UnifiedWorkspace } from "@/components/workspace/UnifiedWorkspace";
 
 export const metadata: Metadata = {
-  title: "PDF Studio | StudyPilot AI",
+  title: "PDF Studio | DocuMorphix AI",
   description: "Advanced browser-based PDF Editor, Annotations, Conversion, OCR, and AI Document Analysis.",
 };
 

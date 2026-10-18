@@ -71,7 +71,7 @@ Return output in JSON format:
         ok: true,
         data: {
           headline: prompt.toUpperCase().slice(0, 30),
-          subtitle: "Master the concepts with StudyPilot AI",
+          subtitle: "Master the concepts with DocuMorphix AI",
           palette: ["#6366f1", "#a855f7", "#06b6d4"],
           badge: "NEW GUIDE",
           provider: "local-heuristic-engine",

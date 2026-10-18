@@ -759,7 +759,7 @@ export function PdfEditor({
                 Processing Document
               </h4>
               <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-xs text-center">
-                {loadingMsg || "Please wait while StudyPilot processes your PDF..."}
+                {loadingMsg || "Please wait while DocuMorphix processes your PDF..."}
               </p>
             </div>
           )}
@@ -963,7 +963,7 @@ export function PdfEditor({
               type="text"
               value={headerText}
               onChange={(e) => setHeaderText(e.target.value)}
-              placeholder="e.g. StudyPilot AI Research Notes - Spring Semester"
+              placeholder="e.g. DocuMorphix AI Research Notes - Spring Semester"
               className="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-xs"
             />
           </div>
