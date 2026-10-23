@@ -1,0 +1,16 @@
+{
+  "name": "DocuMorphix AI — Free PDF Editor & Image Studio",
+  "short_name": "DocuMorphix",
+  "description": "100% Free Online PDF Editor, HD Background Remover, and AI Study Copilot with zero watermarks.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090d16",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

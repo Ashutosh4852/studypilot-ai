@@ -31,6 +31,10 @@ export function Navbar() {
   ];
 
   const toolsList = [
+    { title: "Exam Prep & MCQ Generator", category: "Students", href: "/exam-prep-ai" },
+    { title: "Resume PDF Editor & Sign", category: "Job Seekers", href: "/resume-pdf-editor" },
+    { title: "YouTube Thumbnail Studio", category: "Creators", href: "/youtube-thumbnail-editor" },
+    { title: "Test Paper & Quiz Generator", category: "Teachers", href: "/test-paper-generator" },
     { title: "PDF Editor & Annotator", category: "PDF Studio", href: "/pdf-studio" },
     { title: "Merge & Split PDFs", category: "PDF Studio", href: "/pdf-studio?tab=convert" },
     { title: "PDF to Images / OCR", category: "PDF Studio", href: "/pdf-studio?tab=convert" },
